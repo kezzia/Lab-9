@@ -5,6 +5,8 @@ using namespace std;
 
 int main() {
 
+	TreeNode tree;
+
 	TreeNode a_tree;
 	a_tree.data = 5;
 	a_tree.left_child = NULL;
@@ -14,10 +16,9 @@ int main() {
 	int new_val;
 	cin >> new_val;
 
-	if (new_val <= a_tree.data)
-		a_tree.left_child = new_val;
-	else
-		a_tree.right_child = new_val;
+	TreeNode* root_ptr;
+
+
 	
 	return 0;
 }

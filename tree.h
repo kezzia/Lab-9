@@ -22,6 +22,8 @@ public:
 //OBSERVERS
 //-------------------------------------------------------------
 	void FetchLeaf(TreeNode leaf);
+	bool IsFull();
+	bool IsEmpty();
 	void PrintTree();
 
 private:
