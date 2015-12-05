@@ -16,20 +16,35 @@ public:
 
 //TRANSFORMERS
 //-------------------------------------------------------------	
+	void AddLeaf(int item);
 	void AddLeaf(TreeNode*& root, int item);	//to-do
-	void ClipLeaf(TreeNode*& tree, int item);	//to-do
+	void ClipLeaf(int item);
+	void ClipLeaf(TreeNode*& root, int item);	//to-do
+	void DeleteNode(TreeNode*& root);
+	void GetPredecessor(TreeNode*& root, int& data);
 
 //OBSERVERS
 //-------------------------------------------------------------
+	void GetAncestors(int& item);	//to-do
 	void GetItem(int& item, bool& found);	//to-do
-	void Retrieve(TreeNode* tree, int& item, bool& found);
+	void GetAncestors(int& item, TreeNode* root, TreeNode* node_ptr, TreeNode* parent_ptr);
+	void Retrieve(TreeNode* root, int& item, bool& found);
 	bool IsFull();
 	bool IsEmpty();
-	void InOrder();				//to-do
-	TreeNode* GetRoot();
+
+	void InOrder();
+	void InOrder(TreeNode*& root);
+
+	void PreOrder();
+	void PreOrder(TreeNode*& root);
+
+	void PostOrder();
+	void PostOrder(TreeNode*& root);
+
 
 private:
 	TreeNode* root; 				//points at root
+	TreeNode* current_node;
 };
 
 

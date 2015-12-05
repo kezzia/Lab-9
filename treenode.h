@@ -8,6 +8,7 @@ using namespace std;
 struct TreeNode
 {
 	int data;
+	TreeNode* ancestor;
 	TreeNode* left_child;
 	TreeNode* right_child;
 	void PrintNode() {
