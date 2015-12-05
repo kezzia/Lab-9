@@ -16,18 +16,20 @@ public:
 
 //TRANSFORMERS
 //-------------------------------------------------------------	
-	void AddLeaf(TreeNode leaf);
-	void ClipLeaf(TreeNode leaf);
+	void AddLeaf(TreeNode*& root, int item);	//to-do
+	void ClipLeaf(TreeNode*& tree, int item);	//to-do
 
 //OBSERVERS
 //-------------------------------------------------------------
-	void FetchLeaf(TreeNode leaf);
+	void GetItem(int& item, bool& found);	//to-do
+	void Retrieve(TreeNode* tree, int& item, bool& found);
 	bool IsFull();
 	bool IsEmpty();
-	void PrintTree();
+	void InOrder();				//to-do
+	TreeNode* GetRoot();
 
 private:
-	TreeNode* root; //lol
+	TreeNode* root; 				//points at root
 };
 
 

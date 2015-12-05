@@ -7,10 +7,12 @@ using namespace std;
 
 struct TreeNode
 {
-public:
 	int data;
 	TreeNode* left_child;
 	TreeNode* right_child;
+	void PrintNode() {
+		cout << "Data: " << data << endl;
+	}
 
 };
 
